@@ -1,0 +1,59 @@
+        @font-face {
+                font-family: 'creepy';
+                src: url('../fuentes/Creepster-Regular.ttf');
+        }
+        @font-face {
+                font-family: 'aviso';
+                src: url('../fuentes/zombiecontrol.ttf');
+        }
+        body {background-color: black;}
+        #container {width: 1280px; 
+                        height: 900px;
+                        background-image: url('../imagenes/wallpaper.jpg');
+                        margin: auto;
+                        position: relative;
+        }
+        #titulo {position: absolute;
+                top: 70px;
+                left: 200px;
+                font-family: 'creepy';
+                font-size: 2em;
+                text-shadow: 1px 1px 1px orangered;
+                color: rgb(235, 151, 95);
+                }
+        #molestar {position:absolute;
+                top:400px;
+                left: 600px;
+                font-family:'aviso';
+                font-size: 2em;
+                text-shadow:1px 1px 1px orangered ;
+                color:rgb(255, 255, 255);
+        }
+        #zombi {position:absolute;
+                        top:600px;
+                        left:700px;
+                        visibility: hidden;
+                        cursor: crosshair;
+        }
+        #zombi2 {position:absolute;
+                        top: 625px;
+                        left: 100px;
+                        visibility: hidden;
+                        cursor: crosshair;
+                }
+        #gato {/*border: 1px solid white;*/
+                width:100px;
+                height:75px;
+                position:absolute;
+                top: 675px;
+                left:435px;
+                cursor:pointer;
+                }
+        #bruja {/*border: 1px solid white;*/
+                width:150px;
+                height:150px;
+                position:absolute;
+                top:400px;
+                left:375px;
+                cursor:pointer;
+                }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <title>LA TERRORIFICA FIESTA DE HALLOWEEN</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <script src="javascripts/javascripts.js"></script>
+</head>
+<body onload="sonar('cancion')">
+    <div id= "container">
+        <audio id="cancion" controls>
+            <source src="sonidos/Loyalty_Freak_Music_-_10_-_The_Witch_Are_Going_Magical.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="scream">
+            <source src="sonidos/ruido_1.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="rugido">
+            <source src="sonidos/ruido_1.mp3" type="audio/mpeg">
+        </audio>
+        <p id= "titulo">
+        Terrorifica fiesta de Halloween
+        </p>
+        <p id= "molestar">
+        NO MOLESTES AL GATO <br>
+        NI A LA BRUJAAAA!
+        </p>
+        <img id="zombi" src= "imagenes/muerto.gif" height ="300" onclick="ocultar('zombi');parar('scream')">
+        <img id="zombi2" src= "imagenes/giphy.gif" height ="200" onclick="ocultar('zombi2');parar('rugido')">
+        <div id="gato" onclick="mostrar('zombi');sonar('scream')"></div>
+        <div id="bruja" onclick="mostrar('zombi2');sonar('rugido')"></div>
+    </div>
+</body>
+</html>
